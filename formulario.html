@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/img/ic_stx.png">
+    <title>Coinference</title>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <header>
+            <a href="/index.html">Home</a>
+            <a href="/saibamais.html">Saiba Mais</a>
+            <a href="/programacao.html">Programação</a>
+            <a href="/comissao.html">Comissão organizadora</a>
+            <a href="/local.html">Local</a>
+            <a href="/formulario.html" id="pagAtual">Formulário</a>
+        </header>
+    </div>
+    <h1 id="tituloForm">Formulário de inscrição</h1>
+    <fieldset>
+        <div>
+            <h2>Preencha os campos</h2>
+        </div>
+        <form action="/obrigado.html" method="get">
+            <div class="dadosPessoa">
+                <label for="nome">Nome</label>
+                <input type="text" placeholder="Nome" name="nome" id="nome" required>
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="E-mail" name="email" id="email" required>
+                <label for="idade">idade</label>
+                <input type="number" placeholder="Digite sua idade" name="idade" id="idade" required>
+            </div>
+            <div class="info">
+                <h3>Sexo</h3>
+                <div>
+                    <input type="radio" id="opcao1" name="escolha" required>
+                    <label for="opcao1">Masculino</label>
+                </div>
+
+                <div><input type="radio" id="opcao2" name="escolha" required>
+                    <label for="opcao2">Feminino</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="opcao3" name="escolha" required>
+                    <label for="opcao3">Prefiro não dizer</label>
+                </div>
+            </div>
+            <div class="tipoPessoa">
+                <h3>O que te trouxe até aqui?</h3>
+                <div>
+                    <input type="checkbox" id="tecnologia" name="interesses[]" value="tecnologia">
+                    <label for="tecnologia">Tecnologia Blockchain</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="criptomoedas" name="interesses[]" value="criptomoedas" >
+                    <label for="criptomoedas">Criptomoedas</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="financasm" name="interesses[]" value="financasm">
+                    <label for="financasm">Finanças Descentralizadas</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="tokens" name="interesses[]" value="tokens">
+                    <label for="tokens">Tokens não Fungíveis</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="regulamento" name="interesses[]" value="regulamento">
+                    <label for="regulamento">Regulamentação e adoção do sistema de blockchain</label>
+                </div>
+            </div>
+            <div class="area">
+                <h3>O que você é</h3>
+                <select name="seleciona" id="seleciona" required>
+                    <option value="nada">----</option>
+                    <option value="entusiasta">Entusiasta</option>
+                    <option value="dev">Desenvolvedor Blockchain</option>
+                    <option value="empresa">Empreendedor ou Startup</option>
+                    <option value="instituicao">Instituição financeira</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="pesquisador">Pesquisador</option>
+                </select>
+            </div>
+            <div class="palestras">
+                <h3>Se inscreva nas palestras</h3>
+                <div>
+                    <input type="checkbox" name="palestras[]" id="introducao">
+                    <label for="introducao">Abertura e Introdução ao Mundo das Criptomoedas</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="palestras[]" id="bitcoinCrip">
+                    <label for="bitcoinCrip">Bitcoin: A Criptomoeda Original</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="palestras[]" id="ethereum">
+                    <label for="ethereum">Ethereum: A Plataforma para Contratos Inteligentes</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="palestras[]" id="altcoin">
+                    <label for="altcoin">Altcoins: Oportunidades e Desafios</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="palestras[]" id="blockchain">
+                    <label for="blockchain">Blockchain: A Tecnologia por Trás das Criptomoedas</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="palestras[]" id="investimentos">
+                    <label for="investimentos">Investimentos em Criptomoedas: Estratégias e Segurança</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="palestras[]" id="trading">
+                    <label for="trading">Trading de Criptomoedas: Análise Técnica e Fundamental</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="palestras[]" id="wallets">
+                    <label for="wallets">Wallets: Armazenamento Seguro de Criptomoedas</label>
+                </div>
+            </div>
+            <div class="feedback">
+                <h3>Você possui:</h3>
+                <input type="checkbox" id="duvida">
+                <label for="duvida">dúvida</label>
+                <input type="checkbox" id="reclamacao" name="reclamacao">
+                <label for="reclamacao">Reclamação</label>
+                <div>
+                    <textarea name="reclama" id="texto" cols="30" rows="10"
+                        placeholder="Digite aqui sua sugestão ou reclamação"></textarea>
+                </div>
+            </div>
+            <div class="envia">
+                <label for="envia">Deseja enviar algum arquivo?</label>
+                <div>
+                    <input type="file" id="envia">
+                </div>
+            </div>
+            <button type="submit" id="enviaForm">Enviar Formulário</button>
+        </form>
+    </fieldset>
+    <footer>
+        <div class="navPagina">
+            <a href="/index.html">Home</a>
+            <a href="/saibamais.html">Saiba Mais</a>
+            <a href="/programacao.html">Programação</a>
+            <a href="/formulario.html">Formulário</a>
+            <a href="/local.html">Local</a>
+        </div>
+        <div>
+            <a href="">Contatos</a>
+            <a href="">(xx) xxxxx-xxxx</a>
+            <a href="">blockconference@chain.com</a>
+        </div>
+        <div>
+            <a href="">Leonardo Gabriel</a>
+            <a href="">Rafael Xavier</a>
+            <a href="">27/03/2025 e 28/03/2025</a>
+        </div>
+    </footer>
+</body>
+
+</html>
