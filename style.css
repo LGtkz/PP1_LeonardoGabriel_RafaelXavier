@@ -54,7 +54,8 @@ header > a:hover {
 }
 
 .textoPrincipal {
-  height: 450px;
+  height: fit-content;
+  padding-bottom: 3rem;
   width: 100%;
   background-image: url("img/image1.png");
   background-size: cover;
